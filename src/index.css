@@ -1,0 +1,65 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+#root {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100vh;
+}
+
+.main-dev {
+  width: 500px;
+  margin-top: 50px;
+}
+
+.list {
+  min-height: 100px;
+  max-height: 300px;
+  overflow: auto;
+}
+
+.addtodolist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  width: 100%;
+}
+
+input[type="text"] {
+  width: 100%;
+  appearance: none;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #e91e63;
+  background: rgba(#e91e63, 0.2);
+  border-radius: 2px;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+button {
+  cursor: pointer;
+  appearance: none;
+  border: 2px solid #e91e63;
+  background: hsl(0 0 0/0);
+  padding: 10px;
+  color: #e91e63;
+  border-radius: 2px;
+  transition: 1s;
+  &:hover,
+  &:focus,
+  &:active {
+    background: #e91e63;
+    color: #fff;
+  }
+}
+
+.editbutton {
+  margin: 0 10px;
+}
